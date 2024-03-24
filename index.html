@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wELCOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./logo2.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <a style="mix-blend-mode: normal" href="/"><img class="logo" src="logo2.png" alt=""></a>
+            <a href="blog" class="menu-link">Blog</a>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="about">
+            <div class="about-section">
+                <div class="about-section-item">
+                    <img class="about-img" id="img" src="me-1.jpg" alt="me" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-section-item">
+                    <h1>Timofey Basuev</h1>
+                </div>
+                <div class="about-section-item">
+                    <p class="text-upper">Contact</p>
+                    <a href="https://t.me/autaech">Telegram</a>
+                </div>
+                <div class="about-section-item">
+                    <p class="text-upper">Location</p>
+                    <p class="">Russia, Chelyabinsk</p>
+                </div>
+                <div class="about-section-item">
+                    <p class="text-upper">Passions</p>
+                    <ul class="">
+                        <li>Vim</li>
+                        <li><a href="https://suckless.org">Suckless</a></li>
+                        <li>Thinkpads</li>
+                        <li>Mountains</li>
+                        <li>Lambs</li>
+                        <li>Simplicity</li>
+                        <li>Modernism</li>
+                        <li>Brutalism</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="about-section-item">
+                    <p class="text-upper">Experienced</p>
+                    <ul class="">
+                        <li>Python</li>
+                        <li>Linux</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="about-section-item">
+                    <p class="text-upper">Familiared</p>
+                    <ul class="">
+                        <li>C</li>
+                        <li>Golang</li>
+                        <li>Lua</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function zoomIn(el) {
+            el.style.transform = "scale(1.5)";
+        }
+        function zoomOut(el) {
+            el.style.transform = "";
+        }
+        function cycleImages() {
+            const img = document.getElementById("img");
+
+            const photosPathes = ["me-1.jpg", "img-2.jpg", "img-1.jpg", "img-3.jpg"];
+            const photosQuantity = photosPathes.length;
+
+            let counter = 1;
+            let interval = setInterval(function() {
+                img.src = photosPathes[counter];
+
+                counter++;
+                if (counter == photosQuantity) {
+                    counter = 0;
+                }
+            }, 5000);
+        }
+        window.onload = function() {
+            cycleImages();
+        }
+    </script>
+</body>
+</html>
