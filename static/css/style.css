@@ -163,8 +163,8 @@ a {
     }
 
     .about-img {
-        height: 455px;
-        /* object-fit: cover; */
+        height: 25rem;
+        object-fit: cover;
     }
 
     .about-section {
