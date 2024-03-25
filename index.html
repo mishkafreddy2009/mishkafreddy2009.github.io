@@ -11,91 +11,72 @@
     <header class="header">
         <nav class="menu">
             <a href="/"><img class="logo" src="./static/img/logo.png" alt="lamb"></a>
-            <a href="blog">blog</a>
+            <!-- <a href="blog">blog</a> -->
         </nav>
     </header>
     <main class="main">
         <section class="about">
             <div class="about-section">
                 <div class="about-section-item">
-                    <img class="about-img" id="img" src="./static/img/me-1.jpg" alt="me" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                    <img class="about-img" id="img" src="./static/img/img-4.jpg" alt="me" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
                 </div>
             </div>
             <div class="about-section">
                 <div class="about-section-item">
-                    <h1>Timofey Basuev</h1>
+                    <h1 class="text-m">timofey basuev</h1>
                 </div>
                 <div class="about-section-item">
-                    <p class="text-upper">Contact</p>
-                    <a href="https://t.me/autaech">Telegram</a>
+                    <p>CONTACT</p>
+                    <a href="https://t.me/autaech" class="context-button border-black">telegram</a>
                 </div>
                 <div class="about-section-item">
-                    <p class="text-upper">Location</p>
-                    <p class="">Russia, Chelyabinsk</p>
+                    <p>LOCATION</p>
+                    <p class="">russia, chelyabinsk</p>
                 </div>
                 <div class="about-section-item">
-                    <p class="text-upper">Passions</p>
+                    <p>PASSIONS</p>
                     <ul class="">
-                        <li>Vim</li>
-                        <li><a href="https://suckless.org">Suckless</a></li>
-                        <li>Thinkpads</li>
-                        <li>Mountains</li>
-                        <li>Lambs</li>
-                        <li>Simplicity</li>
-                        <li>Modernism</li>
-                        <li>Brutalism</li>
+                        <li>vim</li>
+                        <li><a href="https://suckless.org">suckless</a></li>
+                        <li>thinkpads</li>
+                        <li>mountains</li>
+                        <li>lambs</li>
+                        <li>simplicity</li>
+                        <li>modernism, brutalism</li>
                     </ul>
                 </div>
             </div>
             <div class="about-section">
                 <div class="about-section-item">
-                    <p class="text-upper">Experienced</p>
+                    <p>EXPERIENCED</p>
                     <ul class="">
-                        <li>Python</li>
-                        <li>Linux</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
+                        <li>python</li>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>linux</li>
                     </ul>
                 </div>
                 <div class="about-section-item">
-                    <p class="text-upper">Familiared</p>
+                    <p>FAMILIARED</p>
                     <ul class="">
-                        <li>C</li>
-                        <li>Golang</li>
-                        <li>Lua</li>
+                        <li>c</li>
+                        <li>go</li>
+                        <li>lua</li>
+                    </ul>
+                </div>
+                <div class="about-section-item">
+                    <p>INTERESTED</p>
+                    <ul class="">
+                        <li>de-fi</li>
+                        <li>web3</li>
+                        <li>devops</li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
-    <script>
-        function zoomIn(el) {
-            el.style.transform = "scale(1.5)";
-        }
-        function zoomOut(el) {
-            el.style.transform = "";
-        }
-        function cycleImages() {
-            const imgPath = "./static/img/"
-            const img = document.getElementById("img");
-
-            const photosPathes = ["me-1.jpg", "img-2.jpg", "img-1.jpg", "img-3.jpg"];
-            const photosQuantity = photosPathes.length;
-
-            let counter = 1;
-            let interval = setInterval(function() {
-                img.src = imgPath + photosPathes[counter];
-
-                counter++;
-                if (counter == photosQuantity) {
-                    counter = 0;
-                }
-            }, 5000);
-        }
-        window.onload = function() {
-            cycleImages();
-        }
-    </script>
+    <script src="./static/js/main.js"></script>
 </body>
 </html>
