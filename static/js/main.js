@@ -8,7 +8,7 @@ function cycleImages() {
     const imgPath = "./static/img/"
     const img = document.getElementById("img");
 
-    const photosPathes = ["img-4.jpg", "me-1.jpg", "img-2.jpg", "img-3.jpg", "me-3.jpg", "img-5.jpg"];
+    const photosPathes = ["me-1.jpg", "img-4.jpg", "img-2.jpg", "img-3.jpg", "me-3.jpg", "img-5.jpg"];
     const photosQuantity = photosPathes.length;
 
     let counter = 1;
