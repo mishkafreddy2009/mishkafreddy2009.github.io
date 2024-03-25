@@ -1,9 +1,11 @@
 function zoomIn(el) {
-    el.style.transform = "scale(1.5)";
+    el.style.transform = "translateX(-20%) scale(1.5)";
 }
+
 function zoomOut(el) {
     el.style.transform = "";
 }
+
 function cycleImages() {
     const imgPath = "./static/img/"
     const img = document.getElementById("img");
@@ -21,6 +23,7 @@ function cycleImages() {
         }
     }, 5000);
 }
+
 window.onload = function() {
     cycleImages();
 }
