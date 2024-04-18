@@ -12,7 +12,7 @@
 
 body {
     background-color: #f9f9f9;
-    background: radial-gradient(ellipse farthest-corner at 80% 70%, #000, #f9f9f9, #f9f9f9); display: flex;
+    /* background: radial-gradient(ellipse farthest-corner at 80% 120%, #333, #f9f9f9, #f9f9f9); display: flex; */
     flex-direction: column;
     min-height: 100svh;
     font-family: Arial, Helvetica, sans-serif;
@@ -44,7 +44,7 @@ a {
 }
 
 .header {
-    margin: 2rem 1rem;
+    margin: 3rem 1rem;
 }
 
 .main {
@@ -63,10 +63,6 @@ a {
 
 .text-700 {
     font-weight: 700;
-}
-
-.text-s {
-    /* font-size: 0.725rem; */
 }
 
 .text-m {
@@ -95,7 +91,7 @@ a {
 
 .about-img {
     width: 100%;
-    height: 34rem;
+    height: 28rem;
     object-fit: cover;
 }
 
@@ -105,6 +101,13 @@ a {
 
 .context-button {
     text-decoration: none;
+    margin: 1rem 0 0 0;
+    padding: 0.45rem 0 0 0.25rem;
+}
+
+.unstick {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .left-arrow {
@@ -119,10 +122,6 @@ a {
 
 .logo {
     max-width: 3rem;
-}
-
-.str-out {
-    text-decoration: line-through;
 }
 
 @media (max-width: 667px) {
@@ -153,9 +152,5 @@ a {
 
     .about-section-item + .about-section-item {
         margin-top: 2rem;
-    }
-
-    .about-section:last-child {
-        /* margin-bottom: 2rem; */
     }
 }
