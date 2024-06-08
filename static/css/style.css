@@ -76,7 +76,7 @@ a {
 .about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .about-section-item + .about-section-item {
@@ -106,8 +106,9 @@ a {
 }
 
 .unstick {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    /* padding: 0 0.5rem; */
+    /* margin-left: 0.5rem; */
+    /* margin-right: 0.5rem; */
 }
 
 .left-arrow {
@@ -152,5 +153,9 @@ a {
 
     .about-section-item + .about-section-item {
         margin-top: 2rem;
+    }
+
+    .about-section:last-child {
+        margin-bottom: 3rem;
     }
 }
