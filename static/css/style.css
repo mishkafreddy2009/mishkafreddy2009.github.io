@@ -79,6 +79,12 @@ a {
     /* gap: 2rem; */
 }
 
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-section-item + .about-section-item {
     margin-top: 3rem;
 }
