@@ -14,7 +14,7 @@ body {
     background-color: #f9f9f9;
     /* background: radial-gradient(ellipse farthest-corner at 80% 120%, #333, #f9f9f9, #f9f9f9); display: flex; */
     flex-direction: column;
-    min-height: 100svh;
+    /* min-height: 100svh; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.25;
@@ -106,6 +106,7 @@ a {
 }
 
 .unstick {
+    padding: 0 0.5rem;
     /* padding: 0 0.5rem; */
     /* margin-left: 0.5rem; */
     /* margin-right: 0.5rem; */
