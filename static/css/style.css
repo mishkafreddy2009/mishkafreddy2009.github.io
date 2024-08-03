@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    color: #222;
+    background: radial-gradient(ellipse farthest-corner at 80% 120%, #333, #f9f9f9, #f9f9f9);
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+img,
+picture,
+video,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+p,
+li {
+    max-width: 65ch;
+    text-wrap: pretty;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+.header {
+    margin: 1rem 1rem;
+}
+
+.main {
+    margin: 1rem 1rem;
+    flex-grow: 1;
+}
+
+.no-td {
+    text-decoration: none;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-text {
+    text-transform: uppercase;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+}
+
+.about-section-item + .about-section-item {
+    margin-top: 3rem;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+}
+
+.context-button {
+    text-decoration: none;
+    border: 1px solid #222;
+}
+
+.left-arrow {
+    max-width: 2rem;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.logo {
+    max-width: 3rem;
+}
+
+/* .biography { */
+/*     display: grid; */
+/*     grid-template-columns: repeat(2, 1fr); */
+/* } */
+
+.cover {
+    filter: saturate(0%);
+    max-width: 5rem;
+    object-fit: none;
+}
+
+.cover:hover,
+.cover:active {
+    filter: saturate(100%);
+    object-fit: cover;
+    max-width: 10rem;
+}
+
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+}
+
+.about-section-item .section-title {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 667px) {
+    .cover {
+        filter: saturate(100%);
+        max-width: 5rem;
+        object-fit: cover;
+    }
+
+    /* .biography { */
+    /*     display: flex; */
+    /*     justify-content: space-between; */
+    /* } */
+
+    .about {
+        display: block;
+    }
+
+    .about-img {
+        height: 20rem;
+        object-fit: cover;
+    }
+
+    .about-section {
+        width: 100%;
+    }
+
+    .about-section + .about-section {
+        margin-top: 2rem;
+    }
+
+    .about-section-item + .about-section-item {
+        margin-top: 2rem;
+    }
+
+    .about-section:last-child {
+        margin-bottom: 3rem;
+    }
+}
