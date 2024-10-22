@@ -100,11 +100,6 @@ a {
     max-width: 3rem;
 }
 
-/* .biography { */
-/*     display: grid; */
-/*     grid-template-columns: repeat(2, 1fr); */
-/* } */
-
 .cover {
     filter: saturate(0%);
     max-width: 5rem;
@@ -135,11 +130,6 @@ a {
         max-width: 5rem;
         object-fit: cover;
     }
-
-    /* .biography { */
-    /*     display: flex; */
-    /*     justify-content: space-between; */
-    /* } */
 
     .about {
         display: block;
